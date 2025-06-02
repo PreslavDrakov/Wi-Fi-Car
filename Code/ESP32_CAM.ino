@@ -323,7 +323,7 @@ const char* htmlHomePage PROGMEM = R"HTMLHOMEPAGE(
 
               const link = document.createElement("a");
               link.href = canvas.toDataURL("image/jpeg");
-              link.download = "camera_snapshot_rotated.jpg";
+              link.download = "WiFi_camera_snapshot.jpg";
               document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);
