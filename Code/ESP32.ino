@@ -114,17 +114,17 @@ void processCarMovement(int inputValue)
       break;
   
     case TURN_LEFT:
-      rotateMotor(FRONT_RIGHT_MOTOR, FORWARD);
-      rotateMotor(BACK_RIGHT_MOTOR, FORWARD);
-      rotateMotor(FRONT_LEFT_MOTOR, BACKWARD);
-      rotateMotor(BACK_LEFT_MOTOR, BACKWARD);  
-      break;
-  
-    case TURN_RIGHT:
       rotateMotor(FRONT_RIGHT_MOTOR, BACKWARD);
       rotateMotor(BACK_RIGHT_MOTOR, BACKWARD);
       rotateMotor(FRONT_LEFT_MOTOR, FORWARD);
-      rotateMotor(BACK_LEFT_MOTOR, FORWARD);   
+      rotateMotor(BACK_LEFT_MOTOR, FORWARD);
+      break;
+  
+    case TURN_RIGHT:
+      rotateMotor(FRONT_RIGHT_MOTOR, FORWARD);
+      rotateMotor(BACK_RIGHT_MOTOR, FORWARD);
+      rotateMotor(FRONT_LEFT_MOTOR, BACKWARD);
+      rotateMotor(BACK_LEFT_MOTOR, BACKWARD); 
       break;
   
     case STOP:
