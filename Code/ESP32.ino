@@ -5,6 +5,7 @@
 
 #define PAN_PIN 12
 #define TILT_PIN 13
+#define HARDWARE_ROTATION 180 // Use if the servo motors are installed in the wrong direction
  
 Servo panServo;
 Servo tiltServo;
@@ -216,11 +217,11 @@ void loop()
     }
     else if (key == "Pan")
     {
-      panServo.write(valueInt);
+      panServo.write(HARDWARE_ROTATION - valueInt);
     }
     else if (key == "Tilt")
     {
-      tiltServo.write(valueInt);   
+      tiltServo.write(HARDWARE_ROTATION - valueInt);   
     }     
 
     lastRecvTime = millis();   
